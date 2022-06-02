@@ -23,6 +23,8 @@ declare namespace memoizee {
   interface Memoized<F> {
     delete: F;
     clear: F & (() => void);
+    _get: F;
+    _has: boolean;
   }
 }
 
